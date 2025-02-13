@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Food U+00026 Grocery Delievery</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="shortcut icon" href="./fav.svg" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="uppersection">
+      <header>
+        <nav>
+          <div class="leftside">
+            <div id="logo">
+              <a href="#"
+                ><img src="./fav.svg" alt="" />
+                <img src="./logo.svg" alt="Foodpanda icon" />
+              </a>
+            </div>
+          </div>
+          <div id="rightside">
+            <!-- log in  -->
+                <button title="alredy have an acoount" type="button" id="login" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Login
+                </button>
+                <div class="dropdown-menu">
+                    <form class="px-4 py-3  form-login form">
+                      <div class="form-group">
+                        <label for="exampleDropdownFormEmail1">Email address</label>
+                        <input type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="email@example.com">
+                      </div>
+                      <div class="form-group">
+                        <label for="exampleDropdownFormPassword1">Password</label>
+                        <input type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Password">
+                      </div>
+                      <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="dropdownCheck">
+                        <label class="form-check-label" for="dropdownCheck">
+                          Remember me
+                        </label>
+                      </div>
+                      <button type="submit" class="btn btn-primary">Log in</button>
+                    </form>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">New around here? Sign up</a>
+                    <a class="dropdown-item" href="#">Forgot password?</a>
+                  </div>
+             
+            <!-- <button title="alredy have an acoount" id="login">Login</button> -->
+            <!-- <button title="make a new acoount" >
+              Sign up
+            </button> -->
+            <!-- signup start -->
+            <button title="make a new account" type="button" id="buttonsignin" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Sign up
+              </button>
+              <div class="dropdown-menu">
+                  <form class="px-4 py-3  form-login form">
+                    <div class="form-group">
+                      <label for="exampleDropdownFormEmail1">Email address</label>
+                      <input type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="email@example.com">
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleDropdownFormPassword1">Password</label>
+                      <input type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Password">
+                    </div>
+                    <div class="form-check">
+                      <input type="checkbox" class="form-check-input" id="dropdownCheck">
+                      <label class="form-check-label" for="dropdownCheck">
+                        Remember me
+                      </label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Log in</button>
+                  </form>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">New around here? Sign up</a>
+                  <a class="dropdown-item" href="#">Forgot password?</a>
+                </div>
+           
+<!-- signup end -->
+            
+            <div class="lang">
+                
+              <!-- <label for="lang"><i class="fa-solid fa-globe"></i> EN</label>
+              <select id="langoption" name="lang">
+                <option value="NA"></option>
+                <option value="english">English</option>
+                <option value="pashto">Pashto</option>
+                <option value="Urdu">Urdu</option>
+              </select> -->
+              <label for="lang"><i class="fa-solid fa-globe"></i> EN</label>
+              
+              <select name="lang"  id="langoption" class="form-select form-select-sm" aria-label="Small select example">
+                <option selected>EA</option>
+                <option value="1">URDU</option>
+                <option value="2">PASHTO</option>
+                <option value="3">FRENCH</option>
+              </select>
+            </div>
+            <span id="langsection"
+              ><a href="#" target="_blank" rel="noopener noreferrer">
+                <i id="shoopingbag" class="fa-solid fa-bag-shopping"> </i>
+              </a>
+            </span>
+          </div>
+        </nav>
+      </header>
+    </div>
+
+    <main>
+      <div class="hero-section">
+        <div class="heroleft">
+          <h1>Enjoy discounts on your first order</h1>
+          <div class="box-section">
+            <input placeholder="Enter your street or postal code" type="text" name="postalcode" id="postelcode" />
+            <label for="postalcode"></label>
+            <a href=""><button><img style="width: 24px;" src="./icons/8673594_ic_fluent_my_location_filled_icon.png" alt="">Locate me</button></a>
+            <a href=""><button>Find food</button></a>
+        </div>
+        </div>
+        <div class="heroright">
+          <img src="./refresh-hero-home-pk.png" alt="" />
+        </div>
+      </div>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>
