@@ -407,7 +407,7 @@ nav{
     position: relative;
     overflow: hidden;
     cursor: pointer;
-    margin-right: 1rem;
+    /* margin-right: 1rem; */
     margin-top: 1rem;
     cursor: pointer;
   }
@@ -426,9 +426,11 @@ nav{
   .card p {
     position: absolute;
     bottom: 10px;
-    color: white;
-    font-size: 1.5rem;
+    color: black;
+    font-size: 1.3rem;
     font-weight: bold;
+    padding-left: 10px;
+    padding-right: 10px;
     left: 30px;
   }
   
@@ -454,6 +456,7 @@ nav{
   .container .max-w-xl {
     display: flex;
     flex-direction: column;
+    /* background-color: antiquewhite; */
     justify-content: center;
     align-items: center;
     color: white;
@@ -873,7 +876,7 @@ nav{
     }
   
     .partners .caption {
-      font-size: 1.5rem;
+      font-size: 3rem;
     }
   }
   
@@ -883,5 +886,29 @@ nav{
     }
   }
   
+  #mobilepic{
+    /* width: 39vh; */
+    height: 100vh;
+    position: absolute;
+    right: 120px;
+padding-bottom: 200px;
+    /* top: 0px; */
+  }
 
-  
+  .sectiontwo{
+    margin-top: 18vh;
+  }
+
+  .preparefoodtext{
+    padding-left: 2rem;
+  }
+
+  .maintextexplain{
+    width: 80%;
+    margin-left: 10%;
+    /* margin-right: 5%; */
+  }
+
+  .socials>i{
+    margin-right: 10px;
+  }
